@@ -12,7 +12,7 @@ library(orthogonalsplinebasis)
 library(doParallel)
 library(data.table)
 workpath = getwd()
-#
+# specify the parameters won't change during this computation
 cpu_num =4
 TT=30
 R=0.12

@@ -52,7 +52,7 @@ for (l in 1:n.L){
   L=L.list[l]
   knots<-expand.knots(seq(0,R,length.out = L-2)) # L basis function
   assign(paste0("basi_",L),OrthogonalSplineBasis(knots, order=4, keep.duplicates=FALSE))
-  save(get(paste0("basi_",L)),file = paste0("basi_",L,".RData"))
+  save(list = c(paste0("basi_",L)),file = paste0("basi_",L,".RData")) # make sure list equal to a string vector 
 }
 
 
